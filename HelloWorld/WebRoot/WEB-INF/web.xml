@@ -7,7 +7,7 @@
 
 	<welcome-file-list>
 
-		<welcome-file>index.html</welcome-file>
+		<welcome-file>registr.html</welcome-file>
 
 	</welcome-file-list>
 
@@ -30,6 +30,7 @@
 		<url-pattern>/Test1</url-pattern>
 	</servlet-mapping>
 
+
 	<servlet>
 		<servlet-name>registr</servlet-name>
 		<servlet-class>com.oaec.test.Register</servlet-class>
@@ -37,11 +38,19 @@
 
 	<servlet-mapping>
 		<servlet-name>registr</servlet-name>
-		<url-pattern>/Test1</url-pattern>
+		<url-pattern>/register</url-pattern>
 	</servlet-mapping>
 
+	<!-- ****************************************************************** -->
 
+	<servlet>
+		<servlet-name>servlet</servlet-name>
+		<servlet-class>com.oaec.servlet.Servlet1</servlet-class>
+	</servlet>
 
-
+	<servlet-mapping>
+		<servlet-name>servlet</servlet-name>
+		<url-pattern>/Servlet</url-pattern>
+	</servlet-mapping>
 
 </web-app>
